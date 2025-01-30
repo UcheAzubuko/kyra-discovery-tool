@@ -1,0 +1,28 @@
+.react-calendar-heatmap {
+  text {
+    font-size: 6px;
+    fill: white;
+  }
+
+  .weekday-label {
+    font-size: 8px;
+  }
+
+  .color-empty {
+    fill: #302f34;
+  }
+
+  .color-filled {
+    fill: #5a9d72;
+  }
+
+  .color-filled,
+  .color-empty {
+    rx: 2px;
+    ry: 2px;
+  }
+
+  .react-calendar-heatmap-week {
+    margin-bottom: 2px;
+  }
+}

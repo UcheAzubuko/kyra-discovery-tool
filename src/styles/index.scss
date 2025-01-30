@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './theme/theme.scss';
+
+#app {
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-style: normal;
+  line-height: 1.2;
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  font-size: 14px;
+}
+
+/* Removing all animations, transitions, and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce), (update: slow) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
